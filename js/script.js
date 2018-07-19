@@ -3,5 +3,4 @@
  */
 
 let output = document.getElementById('output');
-
-output.innerHTML = 'This is some dynamically generated script';
+let random_number = Math.ceil(10 * Math.random());
