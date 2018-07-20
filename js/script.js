@@ -101,13 +101,20 @@ function stick() {
     output.innerHTML = "player has finished on "+ playerscore;
     turn=3;
     output3.innerHTML = ("dealer's turn");
-
+  }
+  if (playerscore>21){
+    output.innerHTML = "player has gone bust"
   }
   else if (turn==3) {
-
+    if (dealerscore<17){
+      return false;
+    }
     output2.innerHTML =  "dealer has finished on "+ dealerscore;
     turn=2;
     output3.innerHTML = ("player's turn");
+  }
+  if (dealerscore>21){
+    output2.innerHTML = "dealer has gone bust"
   }
 }
 
